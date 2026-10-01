@@ -1,0 +1,15 @@
+pyspark_datalake/
+│
+├── data_lake/
+│   ├── raw/
+│   │   ├── customers/
+│   │   └── orders/
+│   │
+│   ├── processed/
+│   │   ├── customers/
+│   │   └── orders/
+│   │
+│   └── curated/
+│       └── sales/
+│
+└── datalake_pyspark.py
