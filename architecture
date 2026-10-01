@@ -1,0 +1,39 @@
+                 DATA SOURCES
+                      |
+             +--------+--------+
+             |        |        |
+            CSV      JSON     Logs
+             |        |        |
+             +--------+--------+
+                      |
+                      v
+              ┌───────────────┐
+              │  RAW LAYER    │
+              │               │
+              │ customers.csv │
+              │ orders.json   │
+              └───────┬───────┘
+                      |
+                   PySpark
+                      |
+                      v
+              ┌───────────────┐
+              │ PROCESSED     │
+              │               │
+              │ Cleaned data  │
+              │ Parquet       │
+              └───────┬───────┘
+                      |
+                   Join /
+                 Transform
+                      |
+                      v
+              ┌───────────────┐
+              │ CURATED       │
+              │               │
+              │ Sales data    │
+              │ Parquet       │
+              └───────────────┘
+                      |
+                      v
+                BI / ML / SQL
