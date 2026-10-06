@@ -1,0 +1,6 @@
+product_id,product_name,category,price
+P001,Laptop,Electronics,60000
+P002,Mouse,Electronics,1000
+P003,Keyboard,Electronics,2000
+P004,Chair,Furniture,5000
+P005,Table,Furniture,10000
